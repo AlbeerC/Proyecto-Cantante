@@ -1,0 +1,37 @@
+.shop {
+    background-image: url(../img/fondo-shop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100vw;
+    height: 30rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 12rem;
+
+    @include responsive(tablet) {
+        text-align: center;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .shop__titulo {
+        color: $blanco;
+        font-size: 6rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .shop__boton {
+        color: $blanco;
+        background-color: $colorPrincipal;
+        padding: 2rem 4rem;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-family: $fuenteTitulos;
+        font-size: 2rem;
+    }
+}

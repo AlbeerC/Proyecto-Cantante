@@ -1,0 +1,100 @@
+.footer {
+    background-color: $colorPrincipal;
+    color: $blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 0;
+
+    img {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .footer__boton {
+        background-color: $blanco;
+        color: $colorPrincipal;
+        padding: 1rem 6rem;
+        border-radius: .6rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: $fuenteTitulos;
+        font-size: 2rem;
+
+        &:hover {
+            background-color: $negro;
+        }
+    }
+
+    .footer__texto {
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+
+    .footer__sociales {
+
+        .footer__sociales-lista {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            .color-youtube {
+                background-color: #932418;
+                color: $blanco;
+            }
+
+            .color-insta {
+                background-color: #1A1A1A;
+                color: $blanco;
+            }
+
+            .color-twitter {
+                background-color: #8ed1fc;
+                color: $blanco;
+            }
+
+            .color-tiktok {
+                background-color: #abb8c3;
+                color: $blanco;
+            }
+
+            .color-spotify {
+                background-color: #61CE70;
+                color: $blanco;
+            }
+        }
+
+        .footer__sociales-icono {
+            color: $colorPrincipal;
+            width: 3rem;
+            height: 3rem;
+            padding: 1rem;
+            border-radius: 50%;
+            background-color: $blanco;
+            transition: ease all 500ms;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}   
+
+.copy {
+    background-color: #363434;
+    color: $blanco;
+    padding: 1.5rem 0;
+
+    p {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    a {
+        color: $colorPrincipal;
+        font-family: $fuenteParrafos;
+    }
+}

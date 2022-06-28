@@ -3,7 +3,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 70rem;
+    height: 100%;
+    padding-bottom: 10rem;
+    margin-bottom: 2rem;
 
     .news__titulo {
         text-align: center;
@@ -12,5 +14,42 @@
         font-weight: bold;
         text-transform: uppercase;
         padding-top: 10rem;
+    }
+
+    .news__cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+        padding-top: 5rem;
+
+        .news__cards-card {
+            background-color: $colorPrincipal;
+            color: $blanco;
+            padding: 0;
+            width: 35rem;
+
+            img {
+                height: 25rem;
+                width: 35rem;
+            }
+
+            h3 {
+                font-family: $fuenteParrafos;
+                font-weight: 700;
+                font-size: 1.8rem;
+                padding: 3rem 1rem;
+            }
+
+            .info {
+                font-size: 1.5rem;
+                padding: 0 1rem 3rem 1rem;
+            }
+
+            .fecha {
+                padding: 2rem;
+                border-top: solid 1px $blanco;
+            }
+        }
     }
 }

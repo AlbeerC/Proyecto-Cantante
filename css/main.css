@@ -40,12 +40,14 @@ header {
   align-items: center;
   background-color: #E33926;
   padding: 0 5rem;
-  height: 12rem;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0; }
+  height: 12rem; }
+  @media (min-width: 1200px) {
+    header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0; } }
   @media (max-width: 1200px) {
     header {
       flex-direction: column;
@@ -91,7 +93,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 60.9rem;
+  height: 70rem;
   text-align: center;
   padding-top: 24rem; }
   .home .home__fondo h1 {
@@ -115,7 +117,8 @@ header {
   background-size: cover;
   max-width: 100vw;
   height: 100%;
-  padding-bottom: 15rem; }
+  padding-bottom: 15rem;
+  margin-bottom: 2rem; }
   @media (max-width: 1200px) {
     .music {
       background-position: center; } }
@@ -149,7 +152,8 @@ header {
   background-repeat: no-repeat;
   width: 100vw;
   height: 65rem;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 2rem; }
   .tour .tour__titulo {
     color: #ffffff;
     font-size: 7rem;
@@ -172,7 +176,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 70rem; }
+  height: 100%;
+  padding-bottom: 10rem;
+  margin-bottom: 2rem; }
   .news .news__titulo {
     text-align: center;
     color: #ffffff;
@@ -180,3 +186,160 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     padding-top: 10rem; }
+  .news .news__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding-top: 5rem; }
+    .news .news__cards .news__cards-card {
+      background-color: #E33926;
+      color: #ffffff;
+      padding: 0;
+      width: 35rem; }
+      .news .news__cards .news__cards-card img {
+        height: 25rem;
+        width: 35rem; }
+      .news .news__cards .news__cards-card h3 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 1.8rem;
+        padding: 3rem 1rem; }
+      .news .news__cards .news__cards-card .info {
+        font-size: 1.5rem;
+        padding: 0 1rem 3rem 1rem; }
+      .news .news__cards .news__cards-card .fecha {
+        padding: 2rem;
+        border-top: solid 1px #ffffff; }
+
+.shop {
+  background-image: url(../img/fondo-shop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100vw;
+  height: 30rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 12rem; }
+  @media (max-width: 768px) {
+    .shop {
+      text-align: center;
+      flex-direction: column;
+      gap: 5rem; } }
+  .shop .shop__titulo {
+    color: #ffffff;
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .shop .shop__boton {
+    color: #ffffff;
+    background-color: #E33926;
+    padding: 2rem 4rem;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: "Righteous", cursive;
+    font-size: 2rem; }
+
+.gang {
+  background-image: url(../img/fondo-gang.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100vw;
+  height: 30rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 12rem; }
+  @media (max-width: 768px) {
+    .gang {
+      text-align: center;
+      flex-direction: column;
+      gap: 5rem; } }
+  .gang .gang__titulo {
+    color: #ffffff;
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .gang .gang__boton {
+    color: #ffffff;
+    background-color: #E33926;
+    padding: 2rem 4rem;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: "Righteous", cursive;
+    font-size: 2rem; }
+
+.footer {
+  background-color: #E33926;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 0; }
+  .footer img {
+    width: 30rem;
+    height: 20rem; }
+  .footer .footer__boton {
+    background-color: #ffffff;
+    color: #E33926;
+    padding: 1rem 6rem;
+    border-radius: .6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Righteous", cursive;
+    font-size: 2rem; }
+    .footer .footer__boton:hover {
+      background-color: #000000; }
+  .footer .footer__texto {
+    font-size: 2rem;
+    text-decoration: underline; }
+  .footer .footer__sociales .footer__sociales-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+    .footer .footer__sociales .footer__sociales-lista .color-youtube {
+      background-color: #932418;
+      color: #ffffff; }
+    .footer .footer__sociales .footer__sociales-lista .color-insta {
+      background-color: #1A1A1A;
+      color: #ffffff; }
+    .footer .footer__sociales .footer__sociales-lista .color-twitter {
+      background-color: #8ed1fc;
+      color: #ffffff; }
+    .footer .footer__sociales .footer__sociales-lista .color-tiktok {
+      background-color: #abb8c3;
+      color: #ffffff; }
+    .footer .footer__sociales .footer__sociales-lista .color-spotify {
+      background-color: #61CE70;
+      color: #ffffff; }
+  .footer .footer__sociales .footer__sociales-icono {
+    color: #E33926;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: ease all 500ms; }
+    .footer .footer__sociales .footer__sociales-icono:hover {
+      transform: scale(1.2); }
+
+.copy {
+  background-color: #363434;
+  color: #ffffff;
+  padding: 1.5rem 0; }
+  .copy p {
+    font-size: 1.7rem;
+    text-align: center; }
+  .copy a {
+    color: #E33926;
+    font-family: "Raleway", sans-serif; }
