@@ -1,0 +1,16 @@
+.news {
+    background-image: url(../img/fondo-news.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 70rem;
+
+    .news__titulo {
+        text-align: center;
+        color: $blanco;
+        font-size: 6rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 10rem;
+    }
+}

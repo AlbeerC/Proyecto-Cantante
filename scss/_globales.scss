@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4 {
+    font-weight: bold;
+    font-family: $fuenteTitulos;
+}
+p {
+    text-align: justify;
+    font-family: $fuenteParrafos;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-family: $fuenteEnlaces;
+    color: #ffffff;
+}

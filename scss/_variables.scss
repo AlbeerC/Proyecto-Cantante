@@ -1,0 +1,30 @@
+/* Fuentes */
+
+$fuenteParrafos: 'Raleway', sans-serif;
+$fuenteTitulos:  'Righteous', cursive;
+$fuenteEnlaces: 'Gruppo', cursive;
+
+/* Colores */
+
+$colorPrincipal: #E33926;
+$negro: #000000;
+$blanco: #ffffff;
+
+/* Tamaños media queries */
+
+$pc: 1200px;
+$tablet: 768px;
+
+/* Mixin para responsive */
+
+@mixin responsive ($medida) {
+    @if $medida == pc {
+        @media (max-width: $pc) {
+            @content;
+        }
+    } @else if $medida == tablet {
+        @media (max-width: $tablet) {
+            @content;
+        }
+    }
+}

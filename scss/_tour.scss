@@ -1,0 +1,28 @@
+.tour {
+    background-image: url(../img/fondo-principal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 65rem;
+    text-align: center;
+
+    .tour__titulo {
+        color: $blanco;
+        font-size: 7rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 20rem;
+        margin-bottom: 5rem;
+    }
+
+    .tour__boton {
+        color: $blanco;
+        background-color: $colorPrincipal;
+        padding: 2rem 4rem;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-family: $fuenteTitulos;
+        font-size: 2rem;
+    }
+}
