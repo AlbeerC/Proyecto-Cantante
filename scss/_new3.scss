@@ -1,0 +1,41 @@
+.new3 {
+
+    .new3__home {
+        background-image: url(../img/new3-fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 70rem;
+        display: flex;
+        align-items: center;
+
+        @include responsive(tablet) {
+            background-position: center center;
+        }
+
+        h2 {
+            margin-left: 10rem;
+            color: $blanco;
+            font-weight: normal;
+            font-size: 5rem;
+        }
+    }
+
+    .new3__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin: 5rem 0;
+        padding: 0 12rem;
+
+        @include responsive(tablet) {
+            padding: 0 3rem;
+        }
+
+        iframe {
+            width: 100%;
+            height: 40rem;
+        }
+    }
+}

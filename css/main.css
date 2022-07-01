@@ -260,7 +260,8 @@ header {
     .gang {
       text-align: center;
       flex-direction: column;
-      gap: 5rem; } }
+      gap: 5rem;
+      height: 35rem; } }
   .gang .gang__titulo {
     color: #ffffff;
     font-size: 6rem;
@@ -343,3 +344,163 @@ header {
   .copy a {
     color: #E33926;
     font-family: "Raleway", sans-serif; }
+
+.fechas {
+  margin: 17rem 0 5rem 0;
+  width: 100vw;
+  padding: 0 10rem; }
+  .fechas .fechas__titulo {
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center;
+    border-bottom: solid 4px #ebebeb;
+    padding-bottom: 1rem; }
+  .fechas .fecha {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.2fr;
+    align-content: center;
+    align-items: center;
+    border-bottom: solid 2px #ebebeb;
+    border-top: solid 2px #ebebeb;
+    border-right: solid 2px #ebebeb; }
+    @media (max-width: 1200px) {
+      .fechas .fecha {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr; } }
+    @media (max-width: 768px) {
+      .fechas .fecha {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        border-left: solid 2px #ebebeb; } }
+    .fechas .fecha h3 {
+      font-size: 3.5rem;
+      text-align: center; }
+      @media (max-width: 768px) {
+        .fechas .fecha h3 {
+          padding-top: 3rem; } }
+    .fechas .fecha .fecha__info {
+      height: 100%;
+      border-left: solid 2px #ebebeb;
+      padding-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      @media (max-width: 768px) {
+        .fechas .fecha .fecha__info {
+          border: none; } }
+      .fechas .fecha .fecha__info .direccion {
+        padding: 0 2rem; }
+      .fechas .fecha .fecha__info .fecha__info-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 2rem; }
+        .fechas .fecha .fecha__info .fecha__info-item:nth-child(1) {
+          padding-top: 6rem; }
+        .fechas .fecha .fecha__info .fecha__info-item p {
+          font-weight: bold; }
+        .fechas .fecha .fecha__info .fecha__info-item .fechas-icono {
+          color: #E33926; }
+
+.fechas-no-margin {
+  margin-top: 3rem; }
+
+.new1 .new1__home {
+  background-image: url(../img/new1-fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 70rem;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .new1 .new1__home {
+      background-position: center center; } }
+  .new1 .new1__home h2 {
+    margin-left: 10rem;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 5rem; }
+
+.new1 .new1__info {
+  margin-top: 7rem;
+  padding: 0 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .new1 .new1__info {
+      padding: 0 3rem; } }
+  .new1 .new1__info img {
+    max-width: 100%; }
+    .new1 .new1__info img:last-child {
+      margin-bottom: 5rem; }
+
+.new2 .new2__home {
+  background-image: url(../img/new2-fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70rem;
+  width: 100vw;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .new2 .new2__home {
+      background-position: center center; } }
+  .new2 .new2__home h2 {
+    margin-left: 10rem;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 5rem; }
+
+.new2 .new2__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin: 5rem 0;
+  padding: 0 12rem; }
+  @media (max-width: 768px) {
+    .new2 .new2__info {
+      padding: 0 3rem; } }
+  .new2 .new2__info h3 {
+    text-align: center; }
+  .new2 .new2__info img {
+    max-width: 100%; }
+
+.new3 .new3__home {
+  background-image: url(../img/new3-fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 70rem;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .new3 .new3__home {
+      background-position: center center; } }
+  .new3 .new3__home h2 {
+    margin-left: 10rem;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 5rem; }
+
+.new3 .new3__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin: 5rem 0;
+  padding: 0 12rem; }
+  @media (max-width: 768px) {
+    .new3 .new3__info {
+      padding: 0 3rem; } }
+  .new3 .new3__info iframe {
+    width: 100%;
+    height: 40rem; }
