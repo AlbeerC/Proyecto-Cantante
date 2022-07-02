@@ -18,6 +18,11 @@
             color: $blanco;
             font-weight: normal;
             font-size: 5rem;
+
+            @include responsive(tablet) {
+                margin-left: 0;
+                text-align: center;
+            }
         }
     }
 

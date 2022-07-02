@@ -1,0 +1,115 @@
+.unite {
+    .unite__home {
+        width: 100vw;
+        height: 40rem;
+        background: rgb(227,57,38);
+        background: linear-gradient(90deg, rgba(227,57,38,1) 0%, rgba(227,167,167,1) 100%);
+        display: flex;
+        align-items: center;
+
+        h2 {
+            margin: 10rem 0 0 8rem;
+            color: $blanco;
+            font-size: 4rem;
+            font-weight: normal;
+        }
+    }
+
+    .suscripcion {
+        display: flex;
+        justify-content: space-around;
+        gap: 10rem;
+        padding: 0 5rem;
+        margin: 5rem 0;
+
+        @include responsive(pc) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .suscripcion__formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .campo {
+                display: flex;
+                flex-direction: column;
+                width: 40rem;
+                padding: 2rem 0;
+
+                @include responsive(tablet) {
+                    width: 30rem;
+                }
+
+                label {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    padding-bottom: .8rem;
+                    font-family: $fuenteParrafos;
+                }
+
+                input {
+                    padding: 1rem 2rem;
+                }
+            }
+
+            .btnEnviar {
+                margin: 2rem 0;
+                background-color: $negro;
+                color: $blanco;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: 1rem 6rem;
+                font-family: $fuenteParrafos;
+                font-size: 2rem;
+                border-radius: 5px;
+                border: 3px solid $negro;
+                cursor: pointer;
+            }
+        }
+
+        .suscripcion__derecha {
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            text-transform: uppercase;
+
+            h3 {
+                color: $colorPrincipal;
+                font-weight: normal;
+                font-size: 3rem;
+            }
+
+            p {
+                text-align: center;
+                font-size: 2.5rem;
+            }
+
+            ul {
+                padding-left: 13rem;
+
+                @include responsive(tablet) {
+                    padding: 0;
+                }
+
+                li {
+                    padding: 2rem 0;
+                    font-size: 1.7rem;
+
+                    span {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+
+            img {
+                height: 45rem;
+                width: 35rem;
+            }
+        }
+    }
+}
