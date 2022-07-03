@@ -297,9 +297,11 @@ header {
     padding: 1rem 6rem;
     border-radius: .6rem;
     font-weight: bold;
+    border: none;
     text-transform: uppercase;
     font-family: "Righteous", cursive;
-    font-size: 2rem; }
+    font-size: 2rem;
+    cursor: pointer; }
     .footer .footer__boton:hover {
       background-color: #000000; }
   .footer .footer__texto {
@@ -604,3 +606,19 @@ header {
     .unite .suscripcion .suscripcion__derecha img {
       height: 45rem;
       width: 35rem; }
+
+#bio-info {
+  width: 50rem;
+  height: 70rem;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: justify;
+  padding: 3rem;
+  line-height: 2.5rem;
+  display: none; }
+
+#cerrar {
+  color: #000000; }
+
+.parrafo-js {
+  padding: 3rem 0; }

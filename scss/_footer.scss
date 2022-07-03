@@ -19,9 +19,11 @@
         padding: 1rem 6rem;
         border-radius: .6rem;
         font-weight: bold;
+        border: none;
         text-transform: uppercase;
         font-family: $fuenteTitulos;
         font-size: 2rem;
+        cursor: pointer;
 
         &:hover {
             background-color: $negro;
