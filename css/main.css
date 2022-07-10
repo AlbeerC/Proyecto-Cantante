@@ -9,7 +9,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 html {
   font-size: 62.5%; }
@@ -606,19 +607,3 @@ header {
     .unite .suscripcion .suscripcion__derecha img {
       height: 45rem;
       width: 35rem; }
-
-#bio-info {
-  width: 50rem;
-  height: 70rem;
-  background-color: #ffffff;
-  color: #000000;
-  text-align: justify;
-  padding: 3rem;
-  line-height: 2.5rem;
-  display: none; }
-
-#cerrar {
-  color: #000000; }
-
-.parrafo-js {
-  padding: 3rem 0; }
