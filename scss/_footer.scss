@@ -100,3 +100,50 @@
         font-family: $fuenteParrafos;
     }
 }
+
+
+// JS
+
+.bioInfo {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    color: $negro;
+    background-color: $blanco;
+    padding: 3.5rem 3rem 3rem 3rem;
+    display: none;
+
+    @include responsive(tablet) {
+        width: 100%;
+    }
+
+    .bioTitulo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        text-align: justify;
+        font-family: $fuenteParrafos;
+        font-weight: bold;
+        line-height: 1.4;
+    }
+}
+
+.display {
+    display: block;
+}

@@ -350,6 +350,41 @@ header {
     color: #E33926;
     font-family: "Raleway", sans-serif; }
 
+.bioInfo {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 3.5rem 3rem 3rem 3rem;
+  display: none; }
+  @media (max-width: 768px) {
+    .bioInfo {
+      width: 100%; } }
+  .bioInfo .bioTitulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .bioInfo .bioTitulo button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      font-size: 2rem; }
+  .bioInfo p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-align: justify;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    line-height: 1.4; }
+
+.display {
+  display: block; }
+
 .fechas {
   margin: 17rem 0 5rem 0;
   width: 100vw;
