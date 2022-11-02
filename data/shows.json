@@ -1,0 +1,91 @@
+[
+    {
+        "id": 1,
+        "pais": "Argentina",
+        "fecha": "06 Ago",
+        "hora": "8:00 pm",
+        "lugar": "Gap, Mar del Plata, Argentina",
+        "direccion": "Av. Constitución 5780"
+    },
+
+    {
+        "id": 2,
+        "pais": "Argentina",
+        "fecha": "29 Ago",
+        "hora": "9:00 pm",
+        "lugar": "Movistar Arena",
+        "direccion": "Humboldt 450"
+    },
+
+    {
+        "id": 3,
+        "pais": "Uruguay",
+        "fecha": "11 Sep",
+        "hora": "8:00 pm",
+        "lugar": "Antel Arena, Uruguay",
+        "direccion": "Av. Damaso A. Larrañaga S/N, 12000 Montevideo, Uruguay"
+    },
+
+    {
+        "id": 4,
+        "pais": "Paraguay",
+        "fecha": "25 Sep",
+        "hora": "8:00 pm",
+        "lugar": "Jockey Club",
+        "direccion": "MCM6+8RW, Cedro, Asunción"
+    },
+
+    {
+        "id": 5,
+        "pais": "Argentina",
+        "fecha": "04 Oct",
+        "hora": "7:00 pm",
+        "lugar": "Metropolitano, Rosario",
+        "direccion": "Junín 501, Rosario, Santa Fe"
+    },
+
+    {
+        "id": 6,
+        "pais": "Perú",
+        "fecha": "15 Oct",
+        "hora": "9:00 pm",
+        "lugar": "Arena Perú, Lima",
+        "direccion": "Av. Javier Prado Este 4406, Santiago de Surco 15023"
+    },
+
+    {
+        "id": 7,
+        "pais": "Usa",
+        "fecha": "25 Nov",
+        "hora": "8:00 pm",
+        "lugar": "Euphoria, Miami, USA",
+        "direccion": "55 NE 24th St, Miami, FL 33137, EE. UU."
+    },
+
+    {
+        "id": 8,
+        "pais": "Usa",
+        "fecha": "27 Nov",
+        "hora": "8:00 pm",
+        "lugar": "Music Hall of Williamsburg, NY, USA",
+        "direccion": "66 N 6th St, Brooklyn, NY 11211, Estados Unidos"
+    },
+
+    {
+        "id": 9,
+        "pais": "México",
+        "fecha": "02 Dic",
+        "hora": "8:00 pm",
+        "lugar": "Foro GNP, Mérida, México",
+        "direccion": "Carretera Federal Km 14.5 Mérida-Progreso, Komchen, Mérida, Yucatan, 97300 Mérida, Yuc., México"
+    },
+
+    {
+        "id": 10,
+        "pais": "México",
+        "fecha": "05 Dic",
+        "hora": "9:00 pm",
+        "lugar": "El Foro, Tijuana, México",
+        "direccion": "Av. Revolución, Zona Centro, 22000 Tijuana, B.C., México"
+    }
+]

@@ -106,6 +106,7 @@
 
 .bioInfo {
     position: fixed;
+    scroll-behavior: smooth;
     top: 0;
     bottom: 0;
     width: 50%;
@@ -117,6 +118,7 @@
 
     @include responsive(tablet) {
         width: 100%;
+        padding: 1rem;
     }
 
     .bioTitulo {
@@ -141,6 +143,11 @@
         font-family: $fuenteParrafos;
         font-weight: bold;
         line-height: 1.4;
+
+        @media(max-width:600px) {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
     }
 }
 

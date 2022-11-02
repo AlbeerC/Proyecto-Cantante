@@ -1,93 +1,84 @@
-.fechas {
-    margin: 17rem 0 5rem 0;
-    width: 100vw;
-    padding: 0 10rem;
+.lista-fechas {
+  margin: 17rem 0 5rem 0;
+  width: 100vw;
+  padding: 0 10rem;
+
+  @include responsive(tablet) {
+    padding: 0 3rem;
+  }
+
+  .lista-fecha__titulo {
+    text-align: center;
+    font-size: 4rem;
+    color: $colorPrincipal;
+  }
+
+  .fecha {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.2fr;
+    align-content: center;
+    align-items: center;
+    border-bottom: solid 2px #ebebeb;
+    border-top: solid 2px #ebebeb;
+    border-right: solid 2px #ebebeb;
+
+    @include responsive(pc) {
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr 1fr;
+    }
 
     @include responsive(tablet) {
-        padding: 0 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      border-left: solid 2px #ebebeb;
     }
 
-    .fechas__titulo {
-        font-size: 2.5rem;
-        color: $negro;
-        text-align: center;
-        border-bottom: solid 4px #ebebeb;
-        padding-bottom: 1rem;
+    h3 {
+      font-size: 3.5rem;
+      text-align: center;
+
+      @include responsive(tablet) {
+        padding-top: 3rem;
+      }
     }
 
-    .fecha {
-        margin-top: 5rem;
-        display: grid;
-        grid-template-columns: 1fr 3fr 1.2fr;
-        align-content:center;
+    .fecha__info {
+      height: 100%;
+      border-left: solid 2px #ebebeb;
+      padding-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      @include responsive(tablet) {
+        border: none;
+      }
+
+      .direccion {
+        padding: 0 2rem;
+      }
+
+      .fecha__info-item {
+        display: flex;
         align-items: center;
-        border-bottom: solid 2px #ebebeb;
-        border-top: solid 2px #ebebeb;
-        border-right: solid 2px #ebebeb;
+        justify-content: center;
+        gap: 1rem;
+        padding: 2rem;
 
-        @include responsive(pc) {
-            grid-template-columns: 1fr 2fr;
-            grid-template-rows: 1fr 1fr;
+        &:nth-child(1) {
+          padding-top: 6rem;
         }
 
-        @include responsive(tablet) {
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-            justify-content: center;
-            border-left: solid 2px #ebebeb;
+        p {
+          font-weight: bold;
         }
-
-        h3 {
-            font-size: 3.5rem;
-            text-align: center;
-
-            @include responsive(tablet) {
-                padding-top: 3rem;
-            }
+        .fechas-icono {
+          color: $colorPrincipal;
         }
-
-        .fecha__info {
-            height: 100%;
-            border-left: solid 2px #ebebeb;
-            padding-left: 2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-
-            @include responsive(tablet) {
-                border: none;
-            }
-
-            .direccion {
-                padding: 0 2rem;
-            }
-
-            .fecha__info-item {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 1rem;
-                padding: 2rem;
-
-                &:nth-child(1) {
-                    padding-top: 6rem;
-                }
-
-                p {
-                    font-weight: bold;
-                }
-                .fechas-icono {
-                    color: $colorPrincipal;
-                }
-
-            }
-        }   
+      }
     }
-}
-
-// OTRAS FECHAS
-
-.fechas-no-margin {
-    margin-top: 3rem;
+  }
 }
