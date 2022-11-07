@@ -360,7 +360,8 @@ header {
   color: #000000;
   background-color: #ffffff;
   padding: 3.5rem 3rem 3rem 3rem;
-  display: none; }
+  display: none;
+  overflow-y: auto; }
   @media (max-width: 768px) {
     .bioInfo {
       width: 100%;
@@ -383,10 +384,6 @@ header {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     line-height: 1.4; }
-    @media (max-width: 600px) {
-      .bioInfo p {
-        font-size: 1.1rem;
-        line-height: 1.6; } }
 
 .display {
   display: block; }
@@ -643,3 +640,17 @@ header {
     .unite .suscripcion .suscripcion__derecha img {
       height: 45rem;
       width: 35rem; }
+
+/* Validador formulario desde JS */
+.error, .enviado {
+  padding: 2rem 3rem;
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold; }
+
+.error {
+  background-color: #d82828; }
+
+.enviado {
+  background-color: #39bd39; }

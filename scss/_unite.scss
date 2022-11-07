@@ -113,3 +113,18 @@
         }
     }
 }
+
+/* Validador formulario desde JS */
+.error, .enviado {
+    padding: 2rem 3rem;
+    text-align: center;
+    color: $blanco;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.error {
+    background-color: #d82828;
+}
+.enviado {
+    background-color: #39bd39;
+}

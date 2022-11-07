@@ -115,6 +115,8 @@
     background-color: $blanco;
     padding: 3.5rem 3rem 3rem 3rem;
     display: none;
+    overflow-y: auto;
+
 
     @include responsive(tablet) {
         width: 100%;
@@ -143,11 +145,6 @@
         font-family: $fuenteParrafos;
         font-weight: bold;
         line-height: 1.4;
-
-        @media(max-width:600px) {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
     }
 }
 
